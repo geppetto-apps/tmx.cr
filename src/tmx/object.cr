@@ -2,13 +2,13 @@ module Tmx
   class Object
     JSON.mapping(
       properties: {
-        name:   String,
-        points: {
-          type:    Array(String),
+        name:    String,
+        polygon: {
+          type:    Array(Coordinate),
           nilable: true,
         },
-        shape: {
-          type:    String,
+        polyline: {
+          type:    Array(Coordinate),
           nilable: true,
         },
         properties: Hash(String, String),
@@ -26,20 +26,34 @@ module Tmx
     )
 
     def shape
-      previous_def || "polygon"
+      return "ellipse" if ellipse
+      return "polyline" if polyline
+      "polygon"
     end
 
     def points
-      previous_def || rectangle_points
+      (polygon || polyline || rectangle_points).map do |coord|
+        "#{coord.x},#{coord.y}"
+      end
     end
 
     private def rectangle_points
       [
-        "#{@x},#{@y}",
-        "#{@x + @width},#{@y}",
-        "#{@x + @width},#{@y + @height}",
-        "#{@x},#{@y + @height}",
+        Coordinate.new(@x, @y),
+        Coordinate.new(@x + @width, @y),
+        Coordinate.new(@x + @width, @y + @height),
+        Coordinate.new(@x, @y + @height),
       ]
+    end
+
+    class Coordinate
+      JSON.mapping(
+        x: Int16,
+        y: Int16
+      )
+
+      def initialize(@x, @y)
+      end
     end
   end
 end

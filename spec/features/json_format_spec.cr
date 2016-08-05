@@ -209,66 +209,124 @@ Spec2.describe Tmx do
           expect(object.properties["type"]).to eq "sand"
         end
       end
+
+      context "when evaluating a circular object" do
+        let(object) { map.object_groups.first.objects[2] }
+
+        it "should have name" do
+          expect(object.name).to eq "mushroom"
+        end
+
+        it "should have type" do
+          expect(object.type).to eq "mushroom"
+        end
+
+        it "should have x" do
+          expect(object.x).to eq 256
+        end
+
+        it "should have y" do
+          expect(object.y).to eq 224
+        end
+
+        it "should have width" do
+          expect(object.width).to eq 32
+        end
+
+        it "should have height" do
+          expect(object.height).to eq 32
+        end
+
+        it "should have visible" do
+          expect(object.visible).to eq true
+        end
+
+        it "should have properties" do
+          expect(object.properties.size).to eq 1
+        end
+
+        it "should have shape" do
+          expect(object.shape).to eq "ellipse"
+        end
+
+        it "has the correct properties" do
+          expect(object.properties["player.life.bonus"]).to eq "1"
+        end
+      end
+
+      context "when evaluating a polygon (triangle)" do
+        let(object) { map.object_groups.first.objects[3] }
+
+        it "should have name" do
+          expect(object.name).to eq "danger"
+        end
+
+        it "should have type" do
+          expect(object.type).to eq "sign"
+        end
+
+        it "should have x" do
+          expect(object.x).to eq 448
+        end
+
+        it "should have y" do
+          expect(object.y).to eq 192
+        end
+
+        it "should have shape" do
+          expect(object.shape).to eq "polygon"
+        end
+
+        it "should have points" do
+          expect(object.points).to eq ["0,0", "32,64", "-32,64", "0,0"]
+        end
+
+        it "should have visible" do
+          expect(object.visible).to eq true
+        end
+
+        it "should have (empty) properties" do
+          expect(object.properties.size).to eq 0
+        end
+      end
+
+      context "when evaluating a polyline (line segments)" do
+        let(object) { map.object_groups.first.objects[4] }
+
+        it "should have name" do
+          expect(object.name).to eq "dirt"
+        end
+
+        it "should have type" do
+          expect(object.type).to eq "underground"
+        end
+
+        it "should have x" do
+          expect(object.x).to eq 32
+        end
+
+        it "should have y" do
+          expect(object.y).to eq 320
+        end
+
+        it "should have visible" do
+          expect(object.visible).to eq true
+        end
+
+        it "should have properties" do
+          expect(object.properties.size).to eq 3
+        end
+
+        it "should have shape" do
+          expect(object.shape).to eq "polyline"
+        end
+
+        it "should have points" do
+          expect(object.points).to eq ["0,0", "448,0", "448,64", "0,64", "0,0"]
+        end
+      end
     end
   end
-
-  #     context "when evaluating a circular object" do
-  #
-  #       let(subject) { map.object_groups.first.objects[2] }
-  #
-  #       its(:name) { should eq "mushroom" }
-  #       its(:type) { should eq "mushroom" }
-  #       its(:x) { should eq 256 }
-  #       its(:y) { should eq 224 }
-  #       its(:width) { should eq 32 }
-  #       its(:height) { should eq 32 }
-  #       its(:visible) { should be true }
-  #
-  #       its(:properties) { should have(1).item }
-  #
-  #       its(:shape) { should eq "ellipse" }
-  #
-  #       it "has the correct properties" do
-  #         expect(subject.properties["player.life.bonus"]).to eq "1"
-  #       end
-  #
-  #     end
-  #
-  #     context "when evaluating a polygon (triangle)" do
-  #
-  #       let(subject) { map.object_groups.first.objects[3] }
-  #
-  #       its(:name) { should eq "danger" }
-  #       its(:type) { should eq "sign" }
-  #       its(:x) { should eq 448 }
-  #       its(:y) { should eq 192 }
-  #       its(:shape) { should eq "polygon" }
-  #       its(:points) { should eq [ "0,0", "32,64", "-32,64", "0,0"] }
-  #       its(:visible) { should be true }
-  #
-  #       its(:properties) { should have(0).items }
-  #
-  #     end
-  #
-  #     context "when evaluating a polyline (line segments)" do
-  #
-  #       let(subject) { map.object_groups.first.objects[4] }
-  #
-  #       its(:name) { should eq "dirt" }
-  #       its(:type) { should eq "underground" }
-  #       its(:x) { should eq 32 }
-  #       its(:y) { should eq 320 }
-  #       its(:visible) { should be true }
-  #
-  #       its(:properties) { should have(3).items }
-  #
-  #       its(:shape) { should eq "polyline" }
-  #       its(:points) { should eq ["0,0", "448,0", "448,64", "0,64", "0,0"]}
-  #
-  #     end
-  #   end
-  #
-  # end
 
   describe "#image_layers" do
     it "has the correct number of image layers" do
