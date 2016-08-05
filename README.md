@@ -1,6 +1,8 @@
-# tmx
+[![Build Status](http://drone-9925e255.ci.e0c68077.svc.dockerapp.io:8000/api/badges/geppetto-apps/tmx.cr/status.svg)](http://drone-9925e255.ci.e0c68077.svc.dockerapp.io:8000/geppetto-apps/tmx.cr)
 
-TODO: Write a description here
+# Tmx.cr
+
+Tmx loader for loading Tiled maps into a basic data structure in Crystal.
 
 ## Installation
 
@@ -10,7 +12,7 @@ Add this to your application's `shard.yml`:
 ```yaml
 dependencies:
   tmx:
-    github: [your-github-name]/tmx
+    github: geppetto-apps/tmx.cr
 ```
 
 
@@ -19,10 +21,10 @@ dependencies:
 
 ```crystal
 require "tmx"
+
+map = Tmx.load(some_path)
+map.layers
 ```
-
-
-TODO: Write usage instructions here
 
 ## Development
 
@@ -30,7 +32,7 @@ TODO: Write development instructions here
 
 ## Contributing
 
-1. Fork it ( https://github.com/[your-github-name]/tmx/fork )
+1. Fork it ( https://github.com/geppetto-apps]/tmx/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
@@ -38,4 +40,8 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [[your-github-name]](https://github.com/[your-github-name]) Theodor Tonum - creator, maintainer
+- [[theodorton]](https://github.com/theodorton) Theodor Tonum - creator, maintainer
+
+## Acknowledgements
+
+Fixtures and specs were fetched from the [tmx gem](https://github.com/shawn42/tmx) project.
