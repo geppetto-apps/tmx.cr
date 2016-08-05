@@ -32,6 +32,10 @@ map.layers
 
 TODO: Write development instructions here
 
+## Updating docs
+
+`bin/update-docs`
+
 ## Contributing
 
 1. Fork it ( https://github.com/geppetto-apps]/tmx/fork )
