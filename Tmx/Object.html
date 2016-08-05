@@ -35,8 +35,18 @@
       
     </li>
   
-  <li class=" current" data-id="github.com/geppetto-apps/tmx.cr/Tmx/Object" data-name="tmx::object">
+  <li class="parent current" data-id="github.com/geppetto-apps/tmx.cr/Tmx/Object" data-name="tmx::object">
       <a href="../Tmx/Object.html">Object</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/geppetto-apps/tmx.cr/Tmx/Object/Coordinate" data-name="tmx::object::coordinate">
+      <a href="../Tmx/Object/Coordinate.html">Coordinate</a>
+      
+    </li>
+  
+</ul>
+
       
     </li>
   
@@ -93,7 +103,7 @@
   <h2>Defined in:</h2>
   
     
-      <a href="https://github.com/geppetto-apps/tmx.cr/blob/a8db79034c5ce7cab441b7e03473de1cdc7cefe9/src/tmx/object.cr#L2" target="_blank">tmx/object.cr</a>
+      <a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L2" target="_blank">tmx/object.cr</a>
     
     <br/>
   
@@ -153,7 +163,22 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#points%3D%28_points%3AArray%28String%29%7CNil%29-instance-method" class="signature"><strong>#points=</strong>(_points : Array(String) | Nil)</a>
+        <a href="#polygon%3ANil%7CArray%28Tmx%3A%3AObject%3A%3ACoordinate%29-instance-method" class="signature"><strong>#polygon</strong> : Nil | Array(Tmx::Object::Coordinate)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#polygon%3D%28_polygon%3AArray%28Coordinate%29%7CNil%29-instance-method" class="signature"><strong>#polygon=</strong>(_polygon : Array(Coordinate) | Nil)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#polyline%3ANil%7CArray%28Tmx%3A%3AObject%3A%3ACoordinate%29-instance-method" class="signature"><strong>#polyline</strong> : Nil | Array(Tmx::Object::Coordinate)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#polyline%3D%28_polyline%3AArray%28Coordinate%29%7CNil%29-instance-method" class="signature"><strong>#polyline=</strong>(_polyline : Array(Coordinate) | Nil)</a>
         
       </li>
     
@@ -169,11 +194,6 @@
     
       <li class="entry-summary">
         <a href="#shape-instance-method" class="signature"><strong>#shape</strong></a>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#shape%3D%28_shape%3AString%7CNil%29-instance-method" class="signature"><strong>#shape=</strong>(_shape : String | Nil)</a>
         
       </li>
     
@@ -270,7 +290,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/a8db79034c5ce7cab441b7e03473de1cdc7cefe9/src/tmx/object.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L3" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -291,7 +311,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/a8db79034c5ce7cab441b7e03473de1cdc7cefe9/src/tmx/object.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L3" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -307,7 +327,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/a8db79034c5ce7cab441b7e03473de1cdc7cefe9/src/tmx/object.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L3" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -323,7 +343,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/a8db79034c5ce7cab441b7e03473de1cdc7cefe9/src/tmx/object.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L3" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -339,7 +359,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/a8db79034c5ce7cab441b7e03473de1cdc7cefe9/src/tmx/object.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L3" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -355,7 +375,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/a8db79034c5ce7cab441b7e03473de1cdc7cefe9/src/tmx/object.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L3" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -371,7 +391,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/a8db79034c5ce7cab441b7e03473de1cdc7cefe9/src/tmx/object.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L3" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -387,23 +407,71 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/a8db79034c5ce7cab441b7e03473de1cdc7cefe9/src/tmx/object.cr#L32" target="_blank">View source</a>]
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L34" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="points&#61;&#40;_points:Array&#40;String&#41;|Nil&#41;-instance-method">
+    <div class="entry-detail" id="polygon:Nil|Array&#40;Tmx::Object::Coordinate&#41;-instance-method">
       <div class="signature">
         
-        def <strong>points=</strong>(_points : Array(String) | Nil)
+        def <strong>polygon</strong> : Nil | Array(<a href="../Tmx/Object/Coordinate.html">Tmx::Object::Coordinate</a>)
 
-        <a class="method-permalink" href="#points%3D%28_points%3AArray%28String%29%7CNil%29-instance-method">#</a>
+        <a class="method-permalink" href="#polygon%3ANil%7CArray%28Tmx%3A%3AObject%3A%3ACoordinate%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/a8db79034c5ce7cab441b7e03473de1cdc7cefe9/src/tmx/object.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L3" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="polygon&#61;&#40;_polygon:Array&#40;Coordinate&#41;|Nil&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>polygon=</strong>(_polygon : Array(<a href="../Tmx/Object/Coordinate.html">Coordinate</a>) | Nil)
+
+        <a class="method-permalink" href="#polygon%3D%28_polygon%3AArray%28Coordinate%29%7CNil%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L3" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="polyline:Nil|Array&#40;Tmx::Object::Coordinate&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>polyline</strong> : Nil | Array(<a href="../Tmx/Object/Coordinate.html">Tmx::Object::Coordinate</a>)
+
+        <a class="method-permalink" href="#polyline%3ANil%7CArray%28Tmx%3A%3AObject%3A%3ACoordinate%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L3" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="polyline&#61;&#40;_polyline:Array&#40;Coordinate&#41;|Nil&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>polyline=</strong>(_polyline : Array(<a href="../Tmx/Object/Coordinate.html">Coordinate</a>) | Nil)
+
+        <a class="method-permalink" href="#polyline%3D%28_polyline%3AArray%28Coordinate%29%7CNil%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L3" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -419,7 +487,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/a8db79034c5ce7cab441b7e03473de1cdc7cefe9/src/tmx/object.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L3" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -435,7 +503,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/a8db79034c5ce7cab441b7e03473de1cdc7cefe9/src/tmx/object.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L3" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -451,23 +519,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/a8db79034c5ce7cab441b7e03473de1cdc7cefe9/src/tmx/object.cr#L28" target="_blank">View source</a>]
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="shape&#61;&#40;_shape:String|Nil&#41;-instance-method">
-      <div class="signature">
-        
-        def <strong>shape=</strong>(_shape : String | Nil)
-
-        <a class="method-permalink" href="#shape%3D%28_shape%3AString%7CNil%29-instance-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
-        
-          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/a8db79034c5ce7cab441b7e03473de1cdc7cefe9/src/tmx/object.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L28" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -483,7 +535,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/a8db79034c5ce7cab441b7e03473de1cdc7cefe9/src/tmx/object.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L3" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -499,7 +551,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/a8db79034c5ce7cab441b7e03473de1cdc7cefe9/src/tmx/object.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L3" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -515,7 +567,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/a8db79034c5ce7cab441b7e03473de1cdc7cefe9/src/tmx/object.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L3" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -531,7 +583,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/a8db79034c5ce7cab441b7e03473de1cdc7cefe9/src/tmx/object.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L3" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -547,7 +599,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/a8db79034c5ce7cab441b7e03473de1cdc7cefe9/src/tmx/object.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L3" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -563,7 +615,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/a8db79034c5ce7cab441b7e03473de1cdc7cefe9/src/tmx/object.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L3" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -579,7 +631,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/a8db79034c5ce7cab441b7e03473de1cdc7cefe9/src/tmx/object.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L3" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -595,7 +647,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/a8db79034c5ce7cab441b7e03473de1cdc7cefe9/src/tmx/object.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L3" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -611,7 +663,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/a8db79034c5ce7cab441b7e03473de1cdc7cefe9/src/tmx/object.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L3" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -627,7 +679,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/a8db79034c5ce7cab441b7e03473de1cdc7cefe9/src/tmx/object.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L3" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -643,7 +695,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/a8db79034c5ce7cab441b7e03473de1cdc7cefe9/src/tmx/object.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/558c9c06f90e77bb168f9496783e92b1eca2df86/src/tmx/object.cr#L3" target="_blank">View source</a>]
         
       </div>
     </div>
