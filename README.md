@@ -1,4 +1,6 @@
 [![Build Status](http://drone-9925e255.ci.e0c68077.svc.dockerapp.io:8000/api/badges/geppetto-apps/tmx.cr/status.svg)](http://drone-9925e255.ci.e0c68077.svc.dockerapp.io:8000/geppetto-apps/tmx.cr)
+[![Dependency Status](https://shards.rocks/badge/github/geppetto-apps/tmx.cr/status.svg)](https://shards.rocks/github/geppetto-apps/tmx.cr)
+[![devDependency Status](https://shards.rocks/badge/github/geppetto-apps/tmx.cr/dev_status.svg)](https://shards.rocks/github/geppetto-apps/tmx.cr)
 
 # Tmx.cr
 
