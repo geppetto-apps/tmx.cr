@@ -1,7 +1,9 @@
 require "../spec_helper"
 
 Spec2.describe Tmx do
-  let(fixture_file) { File.join File.dirname(__FILE__), "..", "fixtures", "map.json" }
+  let(fixture_file) do
+    File.join File.dirname(__FILE__), "..", "fixtures", "map.json"
+  end
 
   let(map) do
     described_class.load(fixture_file)
