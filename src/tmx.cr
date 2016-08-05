@@ -1,5 +1,8 @@
+require "json"
 require "./tmx/*"
 
 module Tmx
-  # TODO Put your code here
+  def self.load(path)
+    Tmx::Map.from_json(File.read(path))
+  end
 end
