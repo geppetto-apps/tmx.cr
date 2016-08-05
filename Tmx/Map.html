@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/geppetto-apps/tmx.cr">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../js/doc.js"></script>
+  <title>Tmx::Map - github.com/geppetto-apps/tmx.cr</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li><a href="../index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class="parent open current" data-id="github.com/geppetto-apps/tmx.cr/Tmx" data-name="tmx">
+      <a href="../Tmx.html">Tmx</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/geppetto-apps/tmx.cr/Tmx/ImageLayer" data-name="tmx::imagelayer">
+      <a href="../Tmx/ImageLayer.html">ImageLayer</a>
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/geppetto-apps/tmx.cr/Tmx/Map" data-name="tmx::map">
+      <a href="../Tmx/Map.html">Map</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/geppetto-apps/tmx.cr/Tmx/Object" data-name="tmx::object">
+      <a href="../Tmx/Object.html">Object</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/geppetto-apps/tmx.cr/Tmx/ObjectLayer" data-name="tmx::objectlayer">
+      <a href="../Tmx/ObjectLayer.html">ObjectLayer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/geppetto-apps/tmx.cr/Tmx/TileLayer" data-name="tmx::tilelayer">
+      <a href="../Tmx/TileLayer.html">TileLayer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/geppetto-apps/tmx.cr/Tmx/Tileset" data-name="tmx::tileset">
+      <a href="../Tmx/Tileset.html">Tileset</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Tmx::Map
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../Tmx/Map.html">Tmx::Map</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/geppetto-apps/tmx.cr/blob/3de9335280c52d7b5130a0035291d84117ae37a0/src/tmx/map.cr#L2" target="_blank">tmx/map.cr</a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>Class Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28__temp_38%3AJSON%3A%3APullParser%29-class-method" class="signature"><strong>.new</strong>(__temp_38 : JSON::PullParser)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#height%3AInt16-instance-method" class="signature"><strong>#height</strong> : Int16</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#height%3D%28_height%3AInt16%29-instance-method" class="signature"><strong>#height=</strong>(_height : Int16)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#image_layers-instance-method" class="signature"><strong>#image_layers</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#layers%3AArray%28Tmx%3A%3AImageLayer%7CTmx%3A%3AObjectLayer%7CTmx%3A%3ATileLayer%29-instance-method" class="signature"><strong>#layers</strong> : Array(Tmx::ImageLayer | Tmx::ObjectLayer | Tmx::TileLayer)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#layers%3D%28layers%29-instance-method" class="signature"><strong>#layers=</strong>(layers)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#layers%3D%28_layers%3AArray%28TileLayer%7CObjectLayer%7CImageLayer%29%29-instance-method" class="signature"><strong>#layers=</strong>(_layers : Array(TileLayer | ObjectLayer | ImageLayer))</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#object_groups-instance-method" class="signature"><strong>#object_groups</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#orientation%3AString-instance-method" class="signature"><strong>#orientation</strong> : String</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#orientation%3D%28_orientation%3AString%29-instance-method" class="signature"><strong>#orientation=</strong>(_orientation : String)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#properties%3AHash%28String%2CString%29-instance-method" class="signature"><strong>#properties</strong> : Hash(String, String)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#properties%3D%28_properties%3AHash%28String%2CString%29%29-instance-method" class="signature"><strong>#properties=</strong>(_properties : Hash(String, String))</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tile_layers-instance-method" class="signature"><strong>#tile_layers</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tileheight%3AInt16-instance-method" class="signature"><strong>#tileheight</strong> : Int16</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tileheight%3D%28_tileheight%3AInt16%29-instance-method" class="signature"><strong>#tileheight=</strong>(_tileheight : Int16)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tilesets%3AArray%28Tmx%3A%3ATileset%29-instance-method" class="signature"><strong>#tilesets</strong> : Array(Tmx::Tileset)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tilesets%3D%28_tilesets%3AArray%28Tmx%3A%3ATileset%29%29-instance-method" class="signature"><strong>#tilesets=</strong>(_tilesets : Array(Tmx::Tileset))</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tilewidth%3AInt16-instance-method" class="signature"><strong>#tilewidth</strong> : Int16</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tilewidth%3D%28_tilewidth%3AInt16%29-instance-method" class="signature"><strong>#tilewidth=</strong>(_tilewidth : Int16)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_json%28io%3AIO%29-instance-method" class="signature"><strong>#to_json</strong>(io : IO)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#version%3AInt16-instance-method" class="signature"><strong>#version</strong> : Int16</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#version%3D%28_version%3AInt16%29-instance-method" class="signature"><strong>#version=</strong>(_version : Int16)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#width%3AInt16-instance-method" class="signature"><strong>#width</strong> : Int16</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#width%3D%28_width%3AInt16%29-instance-method" class="signature"><strong>#width=</strong>(_width : Int16)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Class Method Detail</h2>
+  
+    <div class="entry-detail" id="new&#40;__temp_38:JSON::PullParser&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(__temp_38 : JSON::PullParser)
+
+        <a class="method-permalink" href="#new%28__temp_38%3AJSON%3A%3APullParser%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/3de9335280c52d7b5130a0035291d84117ae37a0/src/tmx/map.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="height:Int16-instance-method">
+      <div class="signature">
+        
+        def <strong>height</strong> : Int16
+
+        <a class="method-permalink" href="#height%3AInt16-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/3de9335280c52d7b5130a0035291d84117ae37a0/src/tmx/map.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="height&#61;&#40;_height:Int16&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>height=</strong>(_height : Int16)
+
+        <a class="method-permalink" href="#height%3D%28_height%3AInt16%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/3de9335280c52d7b5130a0035291d84117ae37a0/src/tmx/map.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="image_layers-instance-method">
+      <div class="signature">
+        
+        def <strong>image_layers</strong>
+
+        <a class="method-permalink" href="#image_layers-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/3de9335280c52d7b5130a0035291d84117ae37a0/src/tmx/map.cr#L35" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="layers:Array&#40;Tmx::ImageLayer|Tmx::ObjectLayer|Tmx::TileLayer&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>layers</strong> : Array(<a href="../Tmx/ImageLayer.html">Tmx::ImageLayer</a> | <a href="../Tmx/ObjectLayer.html">Tmx::ObjectLayer</a> | <a href="../Tmx/TileLayer.html">Tmx::TileLayer</a>)
+
+        <a class="method-permalink" href="#layers%3AArray%28Tmx%3A%3AImageLayer%7CTmx%3A%3AObjectLayer%7CTmx%3A%3ATileLayer%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/3de9335280c52d7b5130a0035291d84117ae37a0/src/tmx/map.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="layers&#61;&#40;layers&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>layers=</strong>(layers)
+
+        <a class="method-permalink" href="#layers%3D%28layers%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/3de9335280c52d7b5130a0035291d84117ae37a0/src/tmx/map.cr#L11" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="layers&#61;&#40;_layers:Array&#40;TileLayer|ObjectLayer|ImageLayer&#41;&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>layers=</strong>(_layers : Array(<a href="../Tmx/TileLayer.html">TileLayer</a> | <a href="../Tmx/ObjectLayer.html">ObjectLayer</a> | <a href="../Tmx/ImageLayer.html">ImageLayer</a>))
+
+        <a class="method-permalink" href="#layers%3D%28_layers%3AArray%28TileLayer%7CObjectLayer%7CImageLayer%29%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/3de9335280c52d7b5130a0035291d84117ae37a0/src/tmx/map.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="object_groups-instance-method">
+      <div class="signature">
+        
+        def <strong>object_groups</strong>
+
+        <a class="method-permalink" href="#object_groups-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/3de9335280c52d7b5130a0035291d84117ae37a0/src/tmx/map.cr#L41" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="orientation:String-instance-method">
+      <div class="signature">
+        
+        def <strong>orientation</strong> : String
+
+        <a class="method-permalink" href="#orientation%3AString-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/3de9335280c52d7b5130a0035291d84117ae37a0/src/tmx/map.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="orientation&#61;&#40;_orientation:String&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>orientation=</strong>(_orientation : String)
+
+        <a class="method-permalink" href="#orientation%3D%28_orientation%3AString%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/3de9335280c52d7b5130a0035291d84117ae37a0/src/tmx/map.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="properties:Hash&#40;String,String&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>properties</strong> : Hash(String, String)
+
+        <a class="method-permalink" href="#properties%3AHash%28String%2CString%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/3de9335280c52d7b5130a0035291d84117ae37a0/src/tmx/map.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="properties&#61;&#40;_properties:Hash&#40;String,String&#41;&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>properties=</strong>(_properties : Hash(String, String))
+
+        <a class="method-permalink" href="#properties%3D%28_properties%3AHash%28String%2CString%29%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/3de9335280c52d7b5130a0035291d84117ae37a0/src/tmx/map.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tile_layers-instance-method">
+      <div class="signature">
+        
+        def <strong>tile_layers</strong>
+
+        <a class="method-permalink" href="#tile_layers-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/3de9335280c52d7b5130a0035291d84117ae37a0/src/tmx/map.cr#L27" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tileheight:Int16-instance-method">
+      <div class="signature">
+        
+        def <strong>tileheight</strong> : Int16
+
+        <a class="method-permalink" href="#tileheight%3AInt16-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/3de9335280c52d7b5130a0035291d84117ae37a0/src/tmx/map.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tileheight&#61;&#40;_tileheight:Int16&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>tileheight=</strong>(_tileheight : Int16)
+
+        <a class="method-permalink" href="#tileheight%3D%28_tileheight%3AInt16%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/3de9335280c52d7b5130a0035291d84117ae37a0/src/tmx/map.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tilesets:Array&#40;Tmx::Tileset&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>tilesets</strong> : Array(<a href="../Tmx/Tileset.html">Tmx::Tileset</a>)
+
+        <a class="method-permalink" href="#tilesets%3AArray%28Tmx%3A%3ATileset%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/3de9335280c52d7b5130a0035291d84117ae37a0/src/tmx/map.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tilesets&#61;&#40;_tilesets:Array&#40;Tmx::Tileset&#41;&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>tilesets=</strong>(_tilesets : Array(<a href="../Tmx/Tileset.html">Tmx::Tileset</a>))
+
+        <a class="method-permalink" href="#tilesets%3D%28_tilesets%3AArray%28Tmx%3A%3ATileset%29%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/3de9335280c52d7b5130a0035291d84117ae37a0/src/tmx/map.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tilewidth:Int16-instance-method">
+      <div class="signature">
+        
+        def <strong>tilewidth</strong> : Int16
+
+        <a class="method-permalink" href="#tilewidth%3AInt16-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/3de9335280c52d7b5130a0035291d84117ae37a0/src/tmx/map.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tilewidth&#61;&#40;_tilewidth:Int16&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>tilewidth=</strong>(_tilewidth : Int16)
+
+        <a class="method-permalink" href="#tilewidth%3D%28_tilewidth%3AInt16%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/3de9335280c52d7b5130a0035291d84117ae37a0/src/tmx/map.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_json&#40;io:IO&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>to_json</strong>(io : IO)
+
+        <a class="method-permalink" href="#to_json%28io%3AIO%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/3de9335280c52d7b5130a0035291d84117ae37a0/src/tmx/map.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="version:Int16-instance-method">
+      <div class="signature">
+        
+        def <strong>version</strong> : Int16
+
+        <a class="method-permalink" href="#version%3AInt16-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/3de9335280c52d7b5130a0035291d84117ae37a0/src/tmx/map.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="version&#61;&#40;_version:Int16&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>version=</strong>(_version : Int16)
+
+        <a class="method-permalink" href="#version%3D%28_version%3AInt16%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/3de9335280c52d7b5130a0035291d84117ae37a0/src/tmx/map.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="width:Int16-instance-method">
+      <div class="signature">
+        
+        def <strong>width</strong> : Int16
+
+        <a class="method-permalink" href="#width%3AInt16-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/3de9335280c52d7b5130a0035291d84117ae37a0/src/tmx/map.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="width&#61;&#40;_width:Int16&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>width=</strong>(_width : Int16)
+
+        <a class="method-permalink" href="#width%3D%28_width%3AInt16%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/geppetto-apps/tmx.cr/blob/3de9335280c52d7b5130a0035291d84117ae37a0/src/tmx/map.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
