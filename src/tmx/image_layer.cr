@@ -1,5 +1,5 @@
 module Tmx
-  class ImageLayer
+  struct ImageLayer
     JSON.mapping(
       properties: {
         height:  Int16,

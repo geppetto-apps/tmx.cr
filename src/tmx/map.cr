@@ -1,5 +1,5 @@
 module Tmx
-  class Map
+  struct Map
     getter :properties
     getter :version
     getter :orientation

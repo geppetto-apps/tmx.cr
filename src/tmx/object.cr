@@ -1,5 +1,5 @@
 module Tmx
-  class Object
+  struct Object
     JSON.mapping(
       properties: {
         name:    String,
@@ -46,7 +46,7 @@ module Tmx
       ]
     end
 
-    class Coordinate
+    struct Coordinate
       JSON.mapping(
         x: Int16,
         y: Int16

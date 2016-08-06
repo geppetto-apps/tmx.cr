@@ -1,7 +1,7 @@
 require "./object"
 
 module Tmx
-  class ObjectLayer
+  struct ObjectLayer
     JSON.mapping(
       properties: {
         name:    String,

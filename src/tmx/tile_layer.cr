@@ -1,5 +1,5 @@
 module Tmx
-  class TileLayer
+  struct TileLayer
     JSON.mapping(
       properties: {
         name:    String,

@@ -1,5 +1,5 @@
 module Tmx
-  class Tileset
+  struct Tileset
     JSON.mapping(
       properties: {
         properties:  Hash(String, String),
